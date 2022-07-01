@@ -1,8 +1,8 @@
-import modelUser from "../models/modelUser";
+import serviceUser from "../services/serviceUser";
 import { Request, Response } from "express";
 
 const getAll = async (req: Request, res: Response) => {
-    const users = await modelUser.getAll();
+    const users = await serviceUser.getAll();
     return res.status(200).json(users);
 }
 
