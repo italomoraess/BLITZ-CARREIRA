@@ -16,4 +16,8 @@ const getAll = async () => {
 	return tasks;
 }
 
-export default { getAll };
+const deleteById = async (id: string) => {
+	await connection.execute('DELETE FROM TODO_LIST.Task WHERE id = ?', [id]);
+}
+
+export default { getAll, deleteById };
