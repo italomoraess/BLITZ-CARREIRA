@@ -1,4 +1,4 @@
-import connection from "../connection/connection";
+import connection from '../connection/connection';
 
 const getAll = async () => {
 	const [tasks] = await connection.execute(

@@ -1,4 +1,4 @@
-import modelTask from "../models/modelTask";
+import modelTask from '../models/modelTask';
 
 const getAll = async () => {
     return await modelTask.getAll();

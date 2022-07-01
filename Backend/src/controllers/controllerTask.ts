@@ -1,4 +1,4 @@
-import serviceTask from "../services/serviceTask";
+import serviceTask from '../services/serviceTask';
 import { Request, Response } from "express";
 
 const getAll = async (req: Request, res: Response): Promise<Response> => {
